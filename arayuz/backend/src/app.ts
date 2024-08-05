@@ -1,5 +1,4 @@
 import express from "express"
-import mysql from "mysql2/promise"
 import routes from "./routes"
 
 const app = express()
