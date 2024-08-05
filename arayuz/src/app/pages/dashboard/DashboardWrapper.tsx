@@ -34,7 +34,7 @@ const DashboardPage = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("/api/data")
+      const response = await fetch("/api/users")
       const data = await response.json()
       console.log(data)
     } catch (error) {
