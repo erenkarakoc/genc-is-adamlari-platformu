@@ -12,7 +12,11 @@ npm install || { echo "Failed to install dependencies"; exit 1; }
 # Build the React app
 npm run build || { echo "Failed to build app"; exit 1; }
 
-# Remove old build files and copy new ones
+# Navigate to backend directory
+cd /var/www/genc-is-adamlari-platformu || { echo "Server directory not found"; exit 1; }
+
+# Install server dependencies
+npm install || { echo "Failed to install server dependencies"; exit 1; }
 
 # Restart Nginx
 sudo systemctl restart nginx || { echo "Failed to restart Nginx"; exit 1; }
