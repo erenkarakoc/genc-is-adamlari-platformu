@@ -14,7 +14,7 @@ const GET_USERS_URL = `${API_URL}/users/query`
 
 const getUsers = (query: string): Promise<UsersQueryResponse> => {
   return axios
-    .get(`https://arayuz.gencisadamlariplatformu.com/api?${query}`)
+    .get(`https://arayuz.gencisadamlariplatformu.com/api/users?${query}`)
     .then((d: AxiosResponse<UsersQueryResponse>) => d.data)
 }
 

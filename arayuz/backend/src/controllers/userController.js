@@ -3,53 +3,36 @@ const knex = require("../knex")
 const getAllUsers = async (req, res) => {
   try {
     const { page = 1, items_per_page = 10, search = "" } = req.query
-    const offset = (page - 1) * items_per_page
+    const limit = parseInt(items_per_page, 10)
+    const offset = (parseInt(page, 10) - 1) * limit
 
-    // Use search query to filter users
-    const [users, total] = await Promise.all([
-      knex("users")
-        .select("*")
-        .where(function () {
-          if (search) {
-            this.where("name", "like", `%${search}%`).orWhere(
-              "email",
-              "like",
-              `%${search}%`
-            )
-          }
-        })
-        .limit(items_per_page)
-        .offset(offset),
-      knex("users")
-        .count("id as count")
-        .where(function () {
-          if (search) {
-            this.where("name", "like", `%${search}%`).orWhere(
-              "email",
-              "like",
-              `%${search}%`
-            )
-          }
-        }),
-    ])
+    // Search condition
+    const searchCondition = search
+      ? knex.raw("LOWER(name) LIKE ?", [`%${search.toLowerCase()}%`])
+      : true
+
+    const [total] = await knex("users")
+      .count("* as count")
+      .where(searchCondition)
+    const users = await knex("users")
+      .select("*")
+      .where(searchCondition)
+      .limit(limit)
+      .offset(offset)
+
+    const totalPages = Math.ceil(total.count / limit)
 
     const pagination = {
       page: parseInt(page, 10),
-      items_per_page,
-      total: total[0].count,
-      last_page: Math.ceil(total[0].count / items_per_page),
-      next_page_url:
-        total[0].count > offset + items_per_page
-          ? `/?page=${
-              parseInt(page, 10) + 1
-            }&items_per_page=${items_per_page}&search=${search}`
-          : null,
-      prev_page_url:
-        page > 1
-          ? `/?page=${
-              parseInt(page, 10) - 1
-            }&items_per_page=${items_per_page}&search=${search}`
-          : null,
+      items_per_page: limit,
+      total_items: total.count,
+      total_pages: totalPages,
+      links: Array.from({ length: totalPages }, (_, i) => ({
+        label: `${i + 1}`,
+        active: i + 1 === parseInt(page, 10),
+        url: `/?page=${i + 1}&items_per_page=${limit}&search=${search}`,
+        page: i + 1,
+      })),
     }
 
     res.json({ data: users, payload: { pagination } })
