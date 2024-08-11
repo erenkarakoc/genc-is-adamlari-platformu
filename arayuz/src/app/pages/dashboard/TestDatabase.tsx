@@ -103,9 +103,11 @@ const TestDatabase = () => {
         removeAllUsers()
       </button>
       <ul>
-        {users.map((user, i) => (
-          <UserListItem key={i} user={user} fetchUsers={fetchUsers} />
-        ))}
+        {users
+          ? users.map((user, i) => (
+              <UserListItem key={i} user={user} fetchUsers={fetchUsers} />
+            ))
+          : "..."}
       </ul>
     </>
   )

@@ -1,4 +1,4 @@
-const knex = require("../knex") // Adjust the path if necessary
+const knex = require("../knex")
 
 const getAllUsers = async (req, res) => {
   try {
