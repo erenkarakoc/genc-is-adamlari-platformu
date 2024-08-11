@@ -18,7 +18,7 @@ const UserListItem: React.FC<{ user: User; fetchUsers: () => void }> = ({
   const deleteUser = async () => {
     setIsDeletingUser(true)
     await axios
-      .delete(`http://localhost:5000/api/users/${user.id}`)
+      .delete(`https://localhost:5000/api/users/${user.id}`)
       .then(() => toast.success("Deleted user."))
       .then(fetchUsers)
       .then(() => setIsDeletingUser(false))
@@ -47,7 +47,7 @@ const TestDatabase = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/users")
+      const response = await axios.get("https://localhost:5000/api/users")
       setUsers(response.data)
     } catch (error) {
       console.error("Error fetching data:", error)
@@ -63,7 +63,7 @@ const TestDatabase = () => {
       <button
         onClick={() => {
           axios
-            .post("http://localhost:5000/api/users", {
+            .post("https://localhost:5000/api/users", {
               username: "newuser",
               email: "newuser@example.com",
               password: "password123",
@@ -78,7 +78,7 @@ const TestDatabase = () => {
       <button
         onClick={() => {
           axios
-            .post("http://localhost:5000/api/users/removeAllUsers")
+            .post("https://localhost:5000/api/users/removeAllUsers")
             .then((response) => {
               if (response.data.affectedRows) {
                 toast.success("Removed all users.")
