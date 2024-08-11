@@ -2,10 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import toast from "react-hot-toast"
 
-const API_URL =
-  window.location.hostname === "localhost"
-    ? "https://arayuz.gencisadamlariplatformu.com/api/"
-    : `https://localhost:${import.meta.env.VITE_APP_PORT}/api`
+const API_URL = "https://arayuz.gencisadamlariplatformu.com/api"
 
 interface User {
   id: string
