@@ -2,8 +2,57 @@ const knex = require("../knex")
 
 const getAllUsers = async (req, res) => {
   try {
-    const users = await knex("users").select("*")
-    res.json(users)
+    const { page = 1, items_per_page = 10, search = "" } = req.query
+    const offset = (page - 1) * items_per_page
+
+    // Use search query to filter users
+    const [users, total] = await Promise.all([
+      knex("users")
+        .select("*")
+        .where(function () {
+          if (search) {
+            this.where("name", "like", `%${search}%`).orWhere(
+              "email",
+              "like",
+              `%${search}%`
+            )
+          }
+        })
+        .limit(items_per_page)
+        .offset(offset),
+      knex("users")
+        .count("id as count")
+        .where(function () {
+          if (search) {
+            this.where("name", "like", `%${search}%`).orWhere(
+              "email",
+              "like",
+              `%${search}%`
+            )
+          }
+        }),
+    ])
+
+    const pagination = {
+      page: parseInt(page, 10),
+      items_per_page,
+      total: total[0].count,
+      last_page: Math.ceil(total[0].count / items_per_page),
+      next_page_url:
+        total[0].count > offset + items_per_page
+          ? `/?page=${
+              parseInt(page, 10) + 1
+            }&items_per_page=${items_per_page}&search=${search}`
+          : null,
+      prev_page_url:
+        page > 1
+          ? `/?page=${
+              parseInt(page, 10) - 1
+            }&items_per_page=${items_per_page}&search=${search}`
+          : null,
+    }
+
+    res.json({ data: users, payload: { pagination } })
   } catch (err) {
     console.error("Error fetching users:", err)
     res.status(500).json({ error: "Failed to fetch users" })
