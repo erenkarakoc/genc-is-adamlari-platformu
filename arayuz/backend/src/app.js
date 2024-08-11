@@ -1,5 +1,7 @@
 const express = require("express")
 const cors = require("cors")
+const fs = require("fs")
+const https = require("https")
 const userRoutes = require("./routes/index")
 
 const app = express()
@@ -22,7 +24,16 @@ app.get("/", (req, res) => {
   res.send("Genç İş Adamları Platformu Veritabanı")
 })
 
-const PORT = process.env.PORT || 5000
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`)
+const options = {
+  key: fs.readFileSync(
+    "/etc/letsencrypt/live/arayuz.gencisadamlariplatformu.com/privkey.pem"
+  ),
+  cert: fs.readFileSync(
+    "/etc/letsencrypt/live/arayuz.gencisadamlariplatformu.com/fullchain.pem"
+  ),
+}
+
+const PORT = process.env.PORT
+https.createServer(options, app).listen(PORT, () => {
+  console.log(`HTTPS Server is running on port ${PORT}`)
 })
