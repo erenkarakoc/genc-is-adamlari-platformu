@@ -2,10 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import toast from "react-hot-toast"
 
-const API_URL =
-  window.location.hostname === "localhost"
-    ? import.meta.env.VITE_APP_HOST_API_URL
-    : "localhost"
+const API_URL = `https://localhost:${import.meta.env.VITE_APP_PORT}/api`
 
 interface User {
   id: string
