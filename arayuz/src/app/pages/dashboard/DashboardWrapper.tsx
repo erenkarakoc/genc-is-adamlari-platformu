@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react"
-import axios from "axios"
+import { useEffect } from "react"
 // import { useIntl } from "react-intl"
 import { PageLink, PageTitle } from "../../../_metronic/layout/core"
 import {
@@ -14,6 +13,7 @@ import {
   TablesWidget5,
   TablesWidget9,
 } from "../../../_metronic/partials/widgets"
+import { TestDatabase } from "./TestDatabase"
 
 const dashboardBreadCrumbs: Array<PageLink> = [
   {
@@ -25,10 +25,6 @@ const dashboardBreadCrumbs: Array<PageLink> = [
 ]
 
 const DashboardPage = () => {
-  const [users, setUsers] = useState<
-    { id: string; username: string; email: string; password: string }[]
-  >([])
-
   useEffect(() => {
     // We have to show toolbar only for dashboard page
     document.getElementById("kt_layout_toolbar")?.classList.remove("d-none")
@@ -37,56 +33,11 @@ const DashboardPage = () => {
     }
   }, [])
 
-  const fetchUsers = async () => {
-    try {
-      const response = await axios.get("http://localhost:5000/api/users")
-      setUsers(response.data)
-    } catch (error) {
-      console.error("Error fetching data:", error)
-    }
-  }
-
-  useEffect(() => {
-    fetchUsers()
-  }, [])
-
   return (
     <>
-      <button
-        onClick={() => {
-          axios
-            .post("http://localhost:5000/api/users", {
-              username: "newuser",
-              email: "newuser@example.com",
-              password: "password123",
-            })
-            .then((response) => console.log("User created:", response.data))
-            .then(fetchUsers)
-            .catch((error) => console.error("Error creating user:", error))
-        }}
-      >
-        createUser
-      </button>
-      <button
-        onClick={() => {
-          axios
-            .delete("http://localhost:5000/api/users")
-            .then(fetchUsers)
-            .catch((error) => console.error("Error removing users:", error))
-        }}
-      >
-        removeAllUsers()
-      </button>
+      <TestDatabase />
       {/* begin::Row */}
       <div className="row gy-5 g-xl-8">
-        {users.map((user, i) => (
-          <ul key={i}>
-            <li>{user.id}</li>
-            <li>{user.username}</li>
-            <li>{user.email}</li>
-            <li>{user.password}</li>
-          </ul>
-        ))}
         {/* begin::Col */}
         <div className="col-xxl-4">
           <MixedWidget3
