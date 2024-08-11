@@ -1,13 +1,12 @@
 const express = require("express")
 const cors = require("cors")
-const userRoutes = require("./routes/index") // Adjust path as needed
+const userRoutes = require("./routes/index")
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
 
-// Use the routes defined in routes/index.js
 app.use("/api", userRoutes)
 
 app.get("/", (req, res) => {
