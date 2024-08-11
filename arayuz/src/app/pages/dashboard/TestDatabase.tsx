@@ -2,10 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import toast from "react-hot-toast"
 
-const API_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:5000/api/"
-    : "https://localhost:5000/api/"
+const API_URL = import.meta.env.VITE_APP_HOST_API_URL
 
 interface User {
   id: string
@@ -18,16 +15,19 @@ const UserListItem: React.FC<{ user: User; fetchUsers: () => void }> = ({
   user,
   fetchUsers,
 }) => {
-  const [isDeletingUser, setIsDeletingUser] = useState(false)
+  const [isRemovingUser, setIsRemovingUser] = useState(false)
 
-  const deleteUser = async () => {
-    setIsDeletingUser(true)
+  const removeUser = async () => {
+    setIsRemovingUser(true)
     await axios
-      .delete(`${API_URL}users/${user.id}`)
-      .then(() => toast.success("Deleted user."))
+      .delete(`${API_URL}/users/${user.id}`)
+      .then(() => toast.success("Removed user."))
       .then(fetchUsers)
-      .then(() => setIsDeletingUser(false))
-      .catch(() => toast.error("Couldn't delete user."))
+      .then(() => setIsRemovingUser(false))
+      .catch(() => {
+        toast.error("Couldn't remove user.")
+        setIsRemovingUser(false)
+      })
   }
 
   return (
@@ -37,10 +37,10 @@ const UserListItem: React.FC<{ user: User; fetchUsers: () => void }> = ({
       <li>{user.email}</li>
       <li>{user.password}</li>
       <li>
-        {!isDeletingUser ? (
-          <button onClick={deleteUser}>removeUser</button>
+        {!isRemovingUser ? (
+          <button onClick={removeUser}>removeUser</button>
         ) : (
-          <button disabled>deletingUser...</button>
+          <button disabled>removingUser...</button>
         )}
       </li>
     </>
@@ -52,7 +52,7 @@ const TestDatabase = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get(`${API_URL}users`)
+      const response = await axios.get(`${API_URL}/users`)
       setUsers(response.data)
     } catch (error) {
       console.error("Error fetching data:", error)
@@ -68,7 +68,7 @@ const TestDatabase = () => {
       <button
         onClick={() => {
           axios
-            .post(`${API_URL}users`, {
+            .post(`${API_URL}/users`, {
               username: "newuser",
               email: "newuser@example.com",
               password: "password123",
@@ -83,7 +83,7 @@ const TestDatabase = () => {
       <button
         onClick={() => {
           axios
-            .post(`${API_URL}users/removeAllUsers`)
+            .post(`${API_URL}/users/removeAllUsers`)
             .then((response) => {
               if (response.data.affectedRows) {
                 toast.success("Removed all users.")
