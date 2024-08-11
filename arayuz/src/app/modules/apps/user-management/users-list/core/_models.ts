@@ -1,4 +1,4 @@
-import {ID, Response} from '../../../../../../_metronic/helpers'
+import { ID, Response } from "../../../../../../_metronic/helpers"
 export type User = {
   id?: ID
   name?: string
@@ -19,9 +19,9 @@ export type User = {
 export type UsersQueryResponse = Response<Array<User>>
 
 export const initialUser: User = {
-  avatar: 'avatars/300-6.jpg',
-  position: 'Art Director',
-  role: 'Administrator',
-  name: '',
-  email: '',
+  avatar: "avatars/300-6.jpg",
+  position: "Art Director",
+  role: "Administrator",
+  name: "",
+  email: "",
 }
