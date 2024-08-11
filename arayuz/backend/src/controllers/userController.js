@@ -1,11 +1,10 @@
 const knex = require("../knex")
 
-const getAllUsers = async (req, res) => {
+const getUsers = async (req, res) => {
   try {
-    const page = Math.max(parseInt(req.query.page, 10) || 1, 1)
-    const limit = Math.max(parseInt(req.query.items_per_page, 10) || 10, 1)
-    const offset = (page - 1) * limit
-    const search = req.query.search || ""
+    const { page = 1, items_per_page = 10, search = "" } = req.query
+    const limit = parseInt(items_per_page, 10)
+    const offset = (parseInt(page, 10) - 1) * limit
 
     // Search condition
     const searchCondition = search
@@ -15,6 +14,7 @@ const getAllUsers = async (req, res) => {
     const [total] = await knex("users")
       .count("* as count")
       .where(searchCondition)
+
     const users = await knex("users")
       .select("*")
       .where(searchCondition)
@@ -24,13 +24,13 @@ const getAllUsers = async (req, res) => {
     const totalPages = Math.ceil(total.count / limit)
 
     const pagination = {
-      page,
+      page: parseInt(page, 10),
       items_per_page: limit,
       total_items: total.count,
       total_pages: totalPages,
       links: Array.from({ length: totalPages }, (_, i) => ({
         label: `${i + 1}`,
-        active: i + 1 === page,
+        active: i + 1 === parseInt(page, 10),
         url: `/?page=${
           i + 1
         }&items_per_page=${limit}&search=${encodeURIComponent(search)}`,
@@ -38,10 +38,24 @@ const getAllUsers = async (req, res) => {
       })),
     }
 
-    res.json({ data: users, payload: { pagination } })
+    const response = {
+      data: users,
+      payload: {
+        pagination,
+      },
+    }
+
+    res.json(response)
   } catch (err) {
     console.error("Error fetching users:", err)
-    res.status(500).json({ error: "Failed to fetch users" })
+    res.status(500).json({
+      data: [],
+      payload: {
+        errors: {
+          fetch: ["Unable to fetch users. Please try again later."],
+        },
+      },
+    })
   }
 }
 
@@ -88,4 +102,4 @@ const removeAllUsers = async (req, res) => {
   }
 }
 
-module.exports = { getAllUsers, createUser, removeUser, removeAllUsers }
+module.exports = { getUsers, createUser, removeUser, removeAllUsers }

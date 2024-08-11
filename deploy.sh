@@ -25,4 +25,4 @@ npm run build || { echo "Failed to build app"; exit 1; }
 sudo systemctl restart nginx || { echo "Failed to restart Nginx"; exit 1; }
 
 # Start backend server
-sudo pm2 start gencis
+sudo pm2 restart gencisdb
