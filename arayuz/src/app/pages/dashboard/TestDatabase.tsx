@@ -2,7 +2,10 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import toast from "react-hot-toast"
 
-const API_URL = `https://localhost:${import.meta.env.VITE_APP_PORT}/api`
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "https://arayuz.gencisadamlariplatformu.com/api/"
+    : `https://localhost:${import.meta.env.VITE_APP_PORT}/api`
 
 interface User {
   id: string
@@ -53,9 +56,7 @@ const TestDatabase = () => {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(`${API_URL}/users`)
-      const data = response.data
-      console.log(data)
-      setUsers(Array.isArray(data) ? data : [])
+      setUsers(response.data)
     } catch (error) {
       console.error("Error fetching data:", error)
     }
