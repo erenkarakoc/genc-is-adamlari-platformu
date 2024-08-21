@@ -1,0 +1,28 @@
+body {
+  font-family: var(--sf-pro-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--sf-pro-display);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+#layout {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark-blue);
+  color: var(--light);
+}

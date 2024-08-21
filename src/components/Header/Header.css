@@ -1,0 +1,38 @@
+#main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  z-index: 2;
+}
+#main-header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+#main-nav {
+  height: 100%;
+  width: 100%;
+}
+#main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+#main-nav ul li a {
+  user-select: none;
+  color: var(--light);
+  font-weight: 600;
+  font-style: 16px;
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+}
+#main-nav ul li a:hover {
+  color: var(--blue);
+}
