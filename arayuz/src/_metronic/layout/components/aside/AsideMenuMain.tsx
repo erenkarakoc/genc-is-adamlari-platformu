@@ -1,17 +1,13 @@
-
-import {useIntl} from 'react-intl'
 import {AsideMenuItemWithSub} from './AsideMenuItemWithSub'
 import {AsideMenuItem} from './AsideMenuItem'
 
 export function AsideMenuMain() {
-  const intl = useIntl()
-
   return (
     <>
       <AsideMenuItem
         to='/dashboard'
         icon='color-swatch'
-        title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
+        title='Ana Sayfa'
         fontIcon='bi-app-indicator'
       />
       <AsideMenuItem to='/builder' icon='switch' title='Layout Builder' fontIcon='bi-layers' />

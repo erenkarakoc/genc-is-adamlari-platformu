@@ -1,0 +1,45 @@
+.company-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--dark-blue-80);
+  overflow: hidden;
+  transition: all 0.15s ease-out;
+}
+.company-item:hover {
+  transform: translateY(-10px);
+}
+
+.company-item .company-item-img {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--dark-blue-30);
+  overflow: hidden;
+}
+.company-item img {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.company-item .company-item-title {
+  margin-top: 10px;
+  color: var(--dark-blue-30);
+  font-family: var(--sf-pro-display);
+  font-weight: 700;
+}
+
+.company-item .company-item-desc {
+  margin-top: 4px;
+  color: var(--dark-blue-40);
+  font-family: var(--sf-pro-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}

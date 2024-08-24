@@ -14,7 +14,7 @@ const Topbar: FC = () => (
         data-bs-target='#kt_modal_invite_friends'
       >
         <KTIcon iconName='plus' className='fs-2 text-primary me-0 me-md-2' />
-        <span className='d-none d-md-inline'>New Member</span>
+        <span className='d-none d-md-inline'>Yeni Üye</span>
       </a>
     </div>
     {/* end::Invite user */}
@@ -29,13 +29,13 @@ const Topbar: FC = () => (
         data-bs-target='#kt_modal_create_app'
       >
         <KTIcon iconName='document' className='fs-2 text-primary me-0 me-md-2' />
-        <span className='d-none d-md-inline'>New App</span>
+        <span className='d-none d-md-inline'>Yeni Firma</span>
       </a>
     </div>
     {/* end::Create app */}
 
     {/* begin::Theme mode */}
-    <div className='d-flex align-items-center  ms-3'>
+    <div className='d-flex align-items-center ms-3'>
       <ThemeModeSwitcher toggleBtnClass=' flex-center bg-body btn-color-gray-600 btn-active-color-primary h-40px' />
     </div>
     {/* end::Theme mode */}

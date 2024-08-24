@@ -1,8 +1,16 @@
 import "./Header.css"
+import { useEffect, useState } from "react"
 
 const Header: React.FC = () => {
+  const location = window.location
+  const [isHome, setIsHome] = useState(false)
+
+  useEffect(() => {
+    if (location.pathname === "/") setIsHome(true)
+  }, [location])
+
   return (
-    <header id="main-header">
+    <header id="main-header" className={`${isHome ? "is-home" : ""}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -137,11 +145,6 @@ const Header: React.FC = () => {
           <div className="col-lg-6">
             <nav id="main-nav">
               <ul>
-                <li>
-                  <a className="nav-item" href="/">
-                    Ana Sayfa
-                  </a>
-                </li>
                 <li className="nav-item nav-item-with-sub">
                   <a className="nav-item" href="/kurumsal">
                     Kurumsal
@@ -161,41 +164,57 @@ const Header: React.FC = () => {
                     </li>
                   </ul>
                 </li>
+
+                <li className="nav-item">
+                  <a className="nav-item" href="/faaliyetler">
+                    Faaliyetler
+                  </a>
+                </li>
                 <li className="nav-item nav-item-with-sub">
                   <a href="/meslekler">Meslekler</a>
                   <ul className="nav-item-sub">
                     <li>
-                      <a href="/yonetim-kurulu">Yönetim Kurulu</a>
+                      <a href="/">Ekonomi ve Finans</a>
                     </li>
                     <li>
-                      <a href="/komisyonlar">Komisyonlar</a>
+                      <a href="/">Hukuk</a>
                     </li>
                     <li>
-                      <a href="/genel-baskan">Genel Başkan</a>
+                      <a href="/">Emlak</a>
                     </li>
                     <li>
-                      <a href="/stratejik-plan">Stratejik Plan</a>
+                      <a href="/">İnşaat</a>
+                    </li>
+                    <li>
+                      <a href="/">Tekstil</a>
+                    </li>
+                    <li>
+                      <a href="/">Kadın</a>
+                    </li>
+                    <li>
+                      <a href="/">Sanayi ve İmalat</a>
+                    </li>
+                    <li>
+                      <a href="/">Eğitim</a>
+                    </li>
+                    <li>
+                      <a href="/">Otomotiv</a>
+                    </li>
+                    <li>
+                      <a href="/">Halkla İlişkiler ve Üye Kabul</a>
+                    </li>
+                    <li>
+                      <a href="/">İşletmecilik</a>
+                    </li>
+                    <li>
+                      <a href="/">Sosyal Sorumluluk</a>
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item nav-item-with-sub">
-                  <a className="nav-item" href="/faaliyetler">
-                    Faaliyetler
+                <li>
+                  <a className="nav-item" href="/firmalar">
+                    Firmalar
                   </a>
-                  <ul className="nav-item-sub">
-                    <li>
-                      <a href="/yonetim-kurulu">Yönetim Kurulu</a>
-                    </li>
-                    <li>
-                      <a href="/komisyonlar">Komisyonlar</a>
-                    </li>
-                    <li>
-                      <a href="/genel-baskan">Genel Başkan</a>
-                    </li>
-                    <li>
-                      <a href="/stratejik-plan">Stratejik Plan</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <button className="gp-button">İletişim</button>

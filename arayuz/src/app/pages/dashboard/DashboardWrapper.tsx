@@ -17,7 +17,7 @@ import { TestDatabase } from "./TestDatabase"
 
 const dashboardBreadCrumbs: Array<PageLink> = [
   {
-    title: "Home",
+    title: "Ana Sayfa",
     path: "/dashboard",
     isSeparator: false,
     isActive: false,
@@ -35,7 +35,6 @@ const DashboardPage = () => {
 
   return (
     <>
-      <TestDatabase />
       {/* begin::Row */}
       <div className="row gy-5 g-xl-8">
         {/* begin::Col */}
@@ -149,6 +148,8 @@ const DashboardPage = () => {
         {/* end::Col */}
       </div>
       {/* end::Row */}
+
+      <TestDatabase />
     </>
   )
 }
@@ -157,7 +158,7 @@ const DashboardWrapper = () => {
   // const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={dashboardBreadCrumbs}>Dashboard</PageTitle>
+      <PageTitle breadcrumbs={dashboardBreadCrumbs}>Ana Sayfa</PageTitle>
       <DashboardPage />
     </>
   )

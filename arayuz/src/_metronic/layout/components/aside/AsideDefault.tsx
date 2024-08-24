@@ -34,7 +34,7 @@ const AsideDefault = () => {
           id='kt_aside_logo'
         >
           <Link to='/dashboard'>
-            <img src={toAbsoluteUrl('media/logos/demo7.svg')} alt='logo' className='h-35px' />
+            <img src={toAbsoluteUrl('media/logos/logo_single_color.svg')} alt='Genç İş Adamları Platformu' className='h-35px' />
           </Link>
         </div>
         {/* end::Logo */}

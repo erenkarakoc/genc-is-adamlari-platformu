@@ -14,6 +14,10 @@
   width: fit-content;
 }
 
+#main-header:not(.is-home) {
+  height: 120px;
+}
+
 #main-nav {
   height: 100%;
   width: 100%;

@@ -1,0 +1,51 @@
+.breadcrumbs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100vw;
+  background-color: var(--dark-blue);
+  border-top: 1px solid var(--dark-blue-80);
+  border-bottom: 1px solid var(--dark-blue-80);
+}
+.breadcrumbs ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 35px;
+}
+
+.breadcrumbs ul li {
+  position: relative;
+}
+
+.breadcrumbs ul li:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -23px;
+  transform: translateY(-50%);
+  display: block;
+  height: 11px;
+  width: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L4.64645 3.93934C5.23223 4.52513 5.23223 5.47487 4.64645 6.06066L1.35355 9.35355C1.15829 9.54882 0.841709 9.54882 0.646447 9.35355C0.451184 9.15829 0.451184 8.84171 0.646447 8.64645L3.93934 5.35355C4.1346 5.15829 4.1346 4.84171 3.93934 4.64645L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z' fill='%23BFC7D9'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.breadcrumbs ul li a {
+  color: var(--dark-blue-50);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+}
+.breadcrumbs ul li:last-of-type a {
+  pointer-events: none;
+  cursor: default;
+  color: var(--dark-blue-30);
+}
+.breadcrumbs ul li:not(:last-of-type) a:hover {
+  color: var(--blue);
+}
