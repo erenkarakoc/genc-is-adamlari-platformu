@@ -8,8 +8,8 @@ const Home: React.FC = () => {
   return (
     <div className="page" id="page-home">
       <Hero />
-      <WhoIs />
       <Announcements />
+      <WhoIs />
     </div>
   )
 }

@@ -5,12 +5,26 @@
   gap: 10px;
   padding: 20px;
   border-radius: 15px;
-  background-color: var(--dark-blue-80);
+  background-color: var(--dark-blue);
   overflow: hidden;
   transition: all 0.15s ease-out;
 }
 .company-item:hover {
   transform: translateY(-10px);
+}
+.company-item:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translate(50%, -50%);
+  pointer-events: none;
+  display: block;
+  height: 1000px;
+  width: 1000px;
+  border-radius: 600px;
+  background: radial-gradient(#3b78ff 0%, #3b78ff00 65%);
+  opacity: 0.15;
 }
 
 .company-item .company-item-img {
