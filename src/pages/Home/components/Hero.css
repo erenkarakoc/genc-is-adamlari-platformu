@@ -68,7 +68,7 @@
 .hero-slide-desc {
   margin-top: 30px;
   max-width: 450px;
-  color: var(--dark-blue-10);
+  color: var(--dark-blue-60);
   text-align: center;
 }
 
@@ -86,4 +86,18 @@
 .hero-slide:not(.hero-slide-center) .hero-slide-title,
 .hero-slide:not(.hero-slide-center) .hero-slide-desc {
   text-align: left;
+}
+
+.hero-slider .swiper-pagination {
+  bottom: 30px !important;
+}
+.hero-slider .swiper-pagination-bullet {
+  opacity: 1 !important;
+  border-radius: 10px;
+  background-color: var(--dark-blue-60);
+  transition: width 0.1s ease-out;
+}
+.hero-slider .swiper-pagination-bullet-active {
+  width: 15px !important;
+  background-color: var(--blue);
 }

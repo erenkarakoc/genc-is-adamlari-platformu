@@ -1,4 +1,3 @@
-import React from "react"
 import "./Header.css"
 
 const Header: React.FC = () => {
@@ -143,21 +142,63 @@ const Header: React.FC = () => {
                     Ana Sayfa
                   </a>
                 </li>
-                <li>
+                <li className="nav-item nav-item-with-sub">
                   <a className="nav-item" href="/kurumsal">
                     Kurumsal
                   </a>
+                  <ul className="nav-item-sub">
+                    <li>
+                      <a href="/yonetim-kurulu">Yönetim Kurulu</a>
+                    </li>
+                    <li>
+                      <a href="/komisyonlar">Komisyonlar</a>
+                    </li>
+                    <li>
+                      <a href="/genel-baskan">Genel Başkan</a>
+                    </li>
+                    <li>
+                      <a href="/stratejik-plan">Stratejik Plan</a>
+                    </li>
+                  </ul>
                 </li>
                 <li className="nav-item nav-item-with-sub">
                   <a href="/meslekler">Meslekler</a>
+                  <ul className="nav-item-sub">
+                    <li>
+                      <a href="/yonetim-kurulu">Yönetim Kurulu</a>
+                    </li>
+                    <li>
+                      <a href="/komisyonlar">Komisyonlar</a>
+                    </li>
+                    <li>
+                      <a href="/genel-baskan">Genel Başkan</a>
+                    </li>
+                    <li>
+                      <a href="/stratejik-plan">Stratejik Plan</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
+                <li className="nav-item nav-item-with-sub">
                   <a className="nav-item" href="/faaliyetler">
                     Faaliyetler
                   </a>
+                  <ul className="nav-item-sub">
+                    <li>
+                      <a href="/yonetim-kurulu">Yönetim Kurulu</a>
+                    </li>
+                    <li>
+                      <a href="/komisyonlar">Komisyonlar</a>
+                    </li>
+                    <li>
+                      <a href="/genel-baskan">Genel Başkan</a>
+                    </li>
+                    <li>
+                      <a href="/stratejik-plan">Stratejik Plan</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <button>İletişim</button>
+                  <button className="gp-button">İletişim</button>
                 </li>
               </ul>
             </nav>

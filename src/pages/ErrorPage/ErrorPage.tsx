@@ -1,4 +1,3 @@
-import React from "react"
 
 import Error404Page from "./components/404"
 import Error500Page from "./components/500"

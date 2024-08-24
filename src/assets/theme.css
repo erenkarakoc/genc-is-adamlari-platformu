@@ -1,6 +1,21 @@
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#layout {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark-blue);
+  color: var(--light);
   font-family: var(--sf-pro-text);
 }
+
+/****************
+ ** Typography **
+ ****************/
 
 h1,
 h2,
@@ -18,11 +33,32 @@ p {
   font-weight: 500;
 }
 
-#layout {
-  min-height: 100vh;
-  min-width: 100vw;
-  padding: 0;
-  margin: 0;
-  background-color: var(--dark-blue);
+/****************
+ ** Components **
+ ****************/
+
+.gp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--blue);
   color: var(--light);
+  text-align: center;
+  font-family: var(--sf-pro-display);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  transition: all 0.15s ease-out;
+}
+
+.gp-button:hover {
+  box-shadow: 0 0 0 3px #3b78ff50;
+}
+.gp-button:active {
+  box-shadow: 0 0 0 2px #3b78ff50;
 }

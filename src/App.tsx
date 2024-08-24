@@ -7,6 +7,7 @@ import "./assets/theme.css"
 import "./assets/responsive.css"
 
 import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div id="content">
         <AppRoutes />
       </div>
+      <Footer />
     </main>
   )
 }

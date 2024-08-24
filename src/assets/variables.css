@@ -3,9 +3,13 @@
   --blue-80: #88adff;
   --blue-10: #cdddff;
   --dark-blue: #0a0e16;
-  --dark-blue-80: #16191f;
-  --dark-blue-50: #353e52;
-  --dark-blue-10: #646e85;
+  --dark-blue-90: #16191f;
+  --dark-blue-80: #283042;
+  --dark-blue-70: #353e52;
+  --dark-blue-60: #646e85;
+  --dark-blue-50: #8a95ad;
+  --dark-blue-40: #bfc7d9;
+  --dark-blue-30: #eef3fd;
   --dark: #101010;
   --light: #fafafa;
 }
