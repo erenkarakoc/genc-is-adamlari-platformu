@@ -44,6 +44,23 @@ const Companies: React.FC = () => {
               </div>
             </div>
           </div>
+          <div className="col-lg-3">
+            <div className="company-item">
+              <a href="/" className="card-overlay"></a>
+              <div className="company-item-img">
+                <img
+                  src="/assets/images/companies/logo-3.png"
+                  alt="Özgüven Oto Ekspertiz"
+                />
+              </div>
+              <div className="company-item-title">Özgüven Oto Ekspertiz</div>
+              <div className="company-item-desc">
+                Teknik ekipmanlarla ikinci el araçların
+                kaza/arıza durumlarını test detaylı ekspertiz raporları
+                düzenliyoruz.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

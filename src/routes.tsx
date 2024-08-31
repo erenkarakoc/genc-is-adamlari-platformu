@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Loading from "./components/Loading/Loading"
+import OrganizationSchema from "./pages/OrganizationSchema/OrganizationSchema"
 
 const Home = lazy(() => import("./pages/Home/Home"))
 const Companies = lazy(() => import("./pages/Companies/Companies"))
@@ -14,6 +15,8 @@ const AppRoutes: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/firmalar" element={<Companies />} />
+          <Route path="/organizasyon-yapisi" element={<OrganizationSchema />} />
+          
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>

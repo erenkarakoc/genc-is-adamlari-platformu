@@ -34,7 +34,14 @@
   background-size: contain;
 }
 
-.breadcrumbs ul li a {
+.breadcrumbs ul li span {
+  cursor: default;
+}
+.breadcrumbs ul li span a {
+  cursor: pointer;
+}
+.breadcrumbs ul li span,
+.breadcrumbs ul li span a {
   color: var(--dark-blue-50);
   font-size: 14px;
   font-weight: 400;

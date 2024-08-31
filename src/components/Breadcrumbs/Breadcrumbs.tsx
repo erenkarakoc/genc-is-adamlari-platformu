@@ -10,7 +10,13 @@ const Breadcrumbs: React.FC<Props> = ({ pages }) => {
       <ul className="container">
         {pages.map((page, idx) => (
           <li key={idx}>
-            <a href={page.path}>{page.title}</a>
+            {page.path ? (
+              <span>
+                <a href={page.path}>{page.title}</a>
+              </span>
+            ) : (
+              <span>{page.title}</span>
+            )}
           </li>
         ))}
       </ul>

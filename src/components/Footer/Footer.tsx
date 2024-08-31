@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
               <ul className="row">
                 <li className="col-lg-3">
                   <span>Kurumsal</span>
-                  <a href="/">
-                    <span>Yönetim Kurulu</span>
+                  <a href="/organizasyon-yapisi">
+                    <span>Organizasyon Yapısı</span>
                   </a>
                   <a href="/">
                     <span>Komisyonlar</span>

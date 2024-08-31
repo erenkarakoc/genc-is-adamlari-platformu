@@ -23,6 +23,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--dark-blue-80);
   font-family: var(--sf-pro-display);
   font-weight: 900;
   line-height: 1.2;
@@ -49,11 +50,22 @@ p {
   bottom: 4px;
   height: 8px;
   width: 100%;
-  background-color: var(--blue);
+  background-color: var(--dark-blue-40);
   z-index: 0;
 }
 .section-title-light {
   color: var(--light);
+}
+.section-title-light::after {
+  background-color: var(--blue);
+}
+.section-title-centered {
+  margin: 0 auto;
+  width: fit-content;
+}
+.section-title-centered span {
+  width: fit-content;
+  text-align: center;
 }
 
 .section-desc {

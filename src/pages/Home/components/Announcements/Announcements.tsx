@@ -7,6 +7,7 @@ import "swiper/css"
 import "swiper/css/pagination"
 
 import { motion } from "framer-motion"
+import { convertISOToTurkishDate } from "./../../../../helpers/helper"
 
 const Announcements: React.FC = () => {
   return (
@@ -49,7 +50,9 @@ const Announcements: React.FC = () => {
                   <div className="announcement-title">
                     Expo 2022'de Hedef 5 Milyar Dolarlık Ticaret Bağlantısı
                   </div>
-                  <div className="announcement-date">04.11.2024</div>
+                  <div className="announcement-date">
+                    {convertISOToTurkishDate("11/04/2024")}
+                  </div>
                 </div>
               </motion.div>
             </SwiperSlide>
@@ -71,7 +74,9 @@ const Announcements: React.FC = () => {
                   <div className="announcement-title">
                     Expo 2022'de Hedef 5 Milyar Dolarlık Ticaret Bağlantısı
                   </div>
-                  <div className="announcement-date">04.11.2024</div>
+                  <div className="announcement-date">
+                    {convertISOToTurkishDate("11/04/2024")}
+                  </div>
                 </div>
               </motion.div>
             </SwiperSlide>
@@ -93,7 +98,9 @@ const Announcements: React.FC = () => {
                   <div className="announcement-title">
                     Expo 2022'de Hedef 5 Milyar Dolarlık Ticaret Bağlantısı
                   </div>
-                  <div className="announcement-date">04.11.2024</div>
+                  <div className="announcement-date">
+                    {convertISOToTurkishDate("11/04/2024")}
+                  </div>
                 </div>
               </motion.div>
             </SwiperSlide>
@@ -115,7 +122,9 @@ const Announcements: React.FC = () => {
                   <div className="announcement-title">
                     Expo 2022'de Hedef 5 Milyar Dolarlık Ticaret Bağlantısı
                   </div>
-                  <div className="announcement-date">04.11.2024</div>
+                  <div className="announcement-date">
+                    {convertISOToTurkishDate("11/04/2024")}
+                  </div>
                 </div>
               </motion.div>
             </SwiperSlide>

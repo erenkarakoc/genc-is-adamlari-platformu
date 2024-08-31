@@ -151,7 +151,7 @@ const Header: React.FC = () => {
                   </a>
                   <ul className="nav-item-sub">
                     <li>
-                      <a href="/yonetim-kurulu">Yönetim Kurulu</a>
+                      <a href="/organizasyon-yapisi">Organizasyon Yapısı</a>
                     </li>
                     <li>
                       <a href="/komisyonlar">Komisyonlar</a>
