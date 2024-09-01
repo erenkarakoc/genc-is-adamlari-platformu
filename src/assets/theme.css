@@ -114,3 +114,10 @@ p {
   inset: 0;
   z-index: 1;
 }
+
+.spinner-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-blue-60);
+}

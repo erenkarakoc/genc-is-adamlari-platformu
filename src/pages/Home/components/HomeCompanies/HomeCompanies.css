@@ -1,3 +1,7 @@
+#section-home-companies {
+  padding: 0 0 100px;
+}
+
 .company-item {
   position: relative;
   display: flex;

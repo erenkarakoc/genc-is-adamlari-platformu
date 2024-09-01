@@ -3,7 +3,7 @@
   justify-content: space-between;
   z-index: 2;
   border-bottom: 1px solid var(--blue);
-  margin-bottom: 100px;
+  margin: -120px 0 100px;
   box-shadow: 0 60px 30px -40px #3b78ff30;
 }
 
@@ -11,7 +11,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -120px;
 }
 
 .presindent-image img {
@@ -22,6 +21,7 @@
 .president-header {
   display: flex;
   flex-direction: column;
+  padding-top: 120px;
 }
 
 .president-header .president-title {
@@ -87,6 +87,7 @@
 }
 
 .person-card-subtitle {
+  font-size: 12px;
   margin-top: 8px;
   color: var(--blue);
   text-align: center;

@@ -21,7 +21,7 @@ const WhoIs: React.FC = () => {
               <button className="gp-button mt-4">Devamını Oku</button>
             </div>
             <div className="col-lg-6">
-              <div className="row">
+              <div className="row justify-content-between align-items-center">
                 <div className="col-lg-4">
                   <div className="who-is-counter-item">
                     <span>Şube</span>

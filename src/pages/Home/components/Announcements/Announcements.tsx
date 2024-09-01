@@ -15,7 +15,7 @@ const Announcements: React.FC = () => {
       <section className="section" id="section-announcements">
         <div className="container">
           <h3 className="section-title section-title-light mb-5">
-            <span>Duyurular</span>
+            <span>Haberler</span>
           </h3>
 
           <Swiper

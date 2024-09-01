@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import PageHeader from "../../components/PageHeader/PageHeader"
+import PageHeader from "../../../components/PageHeader/PageHeader"
 import "./OrganizationSchema.css"
 
 const OrganizationSchema: React.FC = () => {
@@ -30,10 +30,7 @@ const OrganizationSchema: React.FC = () => {
                 eğitimlerle binlerce müsaviye katkı sağlamıştır. Ayrıca, SMMM
                 sınavlarına yönelik olarak 8 kitap yayımlamış ve birçok
                 sektördeki yayınevleri ve eğitim kurumlarıyla işbirliği yaparak,
-                pek çok SMMM'ye pratik ve etkili eğitimler sunmuştur. İş
-                dünyasında ve eğitim alanında geniş bir etki yaratmış olan
-                İsmail Yıldırım, genç girişimcilerin destekçisi ve
-                yönlendiricisidir.
+                pek çok SMMM'ye pratik ve etkili eğitimler sunmuştur.
               </p>
             </div>
             <div className="president-image">
@@ -64,14 +61,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -86,14 +81,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -108,14 +101,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -144,14 +135,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -166,14 +155,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -188,14 +175,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -224,14 +209,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -246,14 +229,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -268,14 +249,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -304,14 +283,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -326,14 +303,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -348,14 +323,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -387,14 +360,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -409,14 +380,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -431,14 +400,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -470,14 +437,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -492,14 +457,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -514,14 +477,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -550,14 +511,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -572,14 +531,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -594,14 +551,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -638,14 +593,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -660,14 +613,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -682,14 +633,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -721,14 +670,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -743,14 +690,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -765,14 +710,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -801,14 +744,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -823,14 +764,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -845,14 +784,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -881,14 +818,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -903,14 +838,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -925,14 +858,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -961,14 +892,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -983,14 +912,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -1005,14 +932,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -1038,7 +963,10 @@ const OrganizationSchema: React.FC = () => {
               <div className="col-lg-3">
                 <div className="person-card">
                   <div className="person-card-image">
-                    <img src="/assets/images/people/4.jpg" alt="FERHAN KOCADAL" />
+                    <img
+                      src="/assets/images/people/4.jpg"
+                      alt="FERHAN KOCADAL"
+                    />
                   </div>
                   <div className="person-card-title">FERHAN KOCADAL</div>
                   <div className="person-card-subtitle">İSTANBUL</div>
@@ -1049,14 +977,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -1071,14 +997,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -1093,14 +1017,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -1118,10 +1040,7 @@ const OrganizationSchema: React.FC = () => {
               <div className="col-lg-3">
                 <div className="person-card">
                   <div className="person-card-image">
-                    <img
-                      src="/assets/images/people/2.jpg"
-                      alt="FATMA TOLU"
-                    />
+                    <img src="/assets/images/people/2.jpg" alt="FATMA TOLU" />
                   </div>
                   <div className="person-card-title">FATMA TOLU</div>
                   <div className="person-card-subtitle">İZMİR</div>
@@ -1132,14 +1051,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -1154,14 +1071,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -1176,14 +1091,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -1212,14 +1125,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -1234,14 +1145,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -1256,14 +1165,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"
@@ -1292,14 +1199,12 @@ const OrganizationSchema: React.FC = () => {
                           href="mailto:mail@ornek.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="E-posta gönder"
-                        >
+                          title="E-posta gönder">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z"
@@ -1314,14 +1219,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="X"
-                        >
+                          title="X">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <path
                               fill="currentColor"
                               d="m214.75 211.71l-62.6-98.38l61.77-67.95a8 8 0 0 0-11.84-10.76l-58.84 64.72l-40.49-63.63A8 8 0 0 0 96 32H48a8 8 0 0 0-6.75 12.3l62.6 98.37l-61.77 68a8 8 0 1 0 11.84 10.76l58.84-64.72l40.49 63.63A8 8 0 0 0 160 224h48a8 8 0 0 0 6.75-12.29M164.39 208L62.57 48h29l101.86 160Z"
@@ -1336,14 +1239,12 @@ const OrganizationSchema: React.FC = () => {
                           href="https://x.com"
                           target="_blank"
                           rel="noreferrer"
-                          title="Özgeçmiş"
-                        >
+                          title="Özgeçmiş">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
-                            viewBox="0 0 256 256"
-                          >
+                            viewBox="0 0 256 256">
                             <g fill="currentColor">
                               <path
                                 d="m215.88 56.39l-29.75 169a8 8 0 0 1-9.27 6.49l-130.25-23a8 8 0 0 1-6.49-9.26l29.75-169a8 8 0 0 1 9.27-6.49l130.25 23a8 8 0 0 1 6.49 9.26"

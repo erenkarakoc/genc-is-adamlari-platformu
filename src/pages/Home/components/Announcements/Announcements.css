@@ -1,7 +1,25 @@
 #section-announcements {
+  position: relative;
   margin: 0 0 0;
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: var(--dark-blue);
+}
+
+#section-announcements::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1500px;
+  width: 1500px;
+  background: radial-gradient(#3b78ff20 0%, #3b78ff00 65%);
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  transition: all 20s ease-out;
+}
+
+#section-announcements:hover::before {
+  transform: translate(30%, 30%);
 }
 
 .announcement-item {

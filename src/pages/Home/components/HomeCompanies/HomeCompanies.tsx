@@ -1,19 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import PageHeader from "../../components/PageHeader/PageHeader"
-import "./Companies.css"
+import "./HomeCompanies.css"
 
-const Companies: React.FC = () => {
+const HomeCompanies: React.FC = () => {
   return (
-    <div className="page" id="page-companies">
-      <PageHeader
-        pageTitle="Firmalar"
-        pageDesc="Genç İş Adamları Platformu çatısı altında bir araya gelerek işbirliği yapan ve ticari faaliyetlerini geliştiren firmalara göz atın. İş ortaklıklarını keşfetmek ve bağlantılar kurmak için bu listeyi inceleyin."
-        breadcrumbs={[
-          { title: "Ana Sayfa", path: "/" },
-          { title: "Firmalar", path: "/firmalar" },
-        ]}
-      />
+    <section className="section" id="section-home-companies">
       <div className="container">
+        <h3 className="section-title mb-5">
+          <span>Firmalarımız</span>
+        </h3>
+
         <div className="row">
           <div className="col-lg-3">
             <div className="company-item">
@@ -78,8 +73,8 @@ const Companies: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default Companies
+export default HomeCompanies
