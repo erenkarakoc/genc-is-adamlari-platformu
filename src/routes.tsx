@@ -9,6 +9,9 @@ const Companies = lazy(() => import("./pages/Companies/Companies"))
 const CompanyDetail = lazy(
   () => import("./pages/Companies/CompanyDetail/CompanyDetail")
 )
+const UserDetail = lazy(
+  () => import("./pages/UserDetail/UserDetail")
+)
 const ErrorPage = lazy(() => import("./pages/ErrorPage/ErrorPage"))
 
 const AppRoutes: React.FC = () => {
@@ -20,6 +23,7 @@ const AppRoutes: React.FC = () => {
           <Route path="/firmalar" element={<Companies />} />
           <Route path="/organizasyon-yapisi" element={<OrganizationSchema />} />
           <Route path="/firmalar/the-fonext" element={<CompanyDetail />} />
+          <Route path="/kullanicilar/ismail-yildirim" element={<UserDetail />} />
 
           <Route path="*" element={<ErrorPage />} />
         </Routes>

@@ -14,9 +14,9 @@ const HomeCompanies: React.FC = () => {
             <div className="company-item">
               <a href="/firmalar/the-fonext" className="card-overlay"></a>
               <div className="company-item-img">
-                <img src="/assets/images/companies/logo-1.png" alt="Fonext" />
+                <img src="/assets/images/companies/logo-1.png" alt="The Fonext" />
               </div>
-              <div className="company-item-title">Fonext</div>
+              <div className="company-item-title">The Fonext</div>
               <div className="company-item-desc">
                 Fonext olarak, AI teknolojilerini anlamınız ve entegre etmeniz
                 için size rehberlik ediyoruz.

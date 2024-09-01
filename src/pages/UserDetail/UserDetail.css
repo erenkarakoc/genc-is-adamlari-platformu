@@ -1,36 +1,36 @@
-.company-detail-image {
+.user-detail-image {
   height: fit-content;
   width: 100%;
   padding: 0 50px;
   overflow: hidden;
 }
 
-.company-detail-image img {
+.user-detail-image img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-.company-detail-about {
+.user-detail-about {
   color: var(--dark-blue-60);
   font-size: 16px;
 }
 
-.company-detail-contact {
+.user-detail-contact {
   margin: 50px 0 0;
   padding: 50px;
   background-color: var(--blue);
   border-radius: 20px;
 }
 
-.company-detail-contact-items {
+.user-detail-contact-items {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.company-detail-contact-item {
+.user-detail-contact-item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -39,9 +39,48 @@
   transition: all 0.1s ease-out;
 }
 
-.company-detail-contact-item:hover {
+.user-detail-contact-item:hover {
   color: #ddd;
 }
+
+.user-detail-cv-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: left;
+  max-width: 400px;
+}
+
+.user-detail-cv-items li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--dark-blue-80);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* .user-detail-cv-items li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 2px;
+  width: 14px;
+  background-color: var(--blue);
+}
+
+.user-detail-cv-items li:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  height: 200%;
+  width: 2px;
+  background-color: var(--blue);
+} */
 
 .person-cards-wrapper {
   margin-top: 20px;
@@ -140,4 +179,3 @@
 .person-card-footer-item.view-cv:hover span a svg {
   transform: rotate(0);
 }
-

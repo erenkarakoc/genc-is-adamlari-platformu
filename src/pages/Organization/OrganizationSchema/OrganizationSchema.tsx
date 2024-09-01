@@ -78,8 +78,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -98,8 +97,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -152,8 +150,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -172,8 +169,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -226,8 +222,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -246,8 +241,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -300,8 +294,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -320,8 +313,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -377,8 +369,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -397,8 +388,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -454,8 +444,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -474,8 +463,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -528,8 +516,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -548,8 +535,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -610,8 +596,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -630,8 +615,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -687,8 +671,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -707,8 +690,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -761,8 +743,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -781,8 +762,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -835,8 +815,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -855,8 +834,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -909,8 +887,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -929,8 +906,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -994,8 +970,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -1014,8 +989,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -1068,8 +1042,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -1088,8 +1061,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -1142,8 +1114,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -1162,8 +1133,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
@@ -1216,8 +1186,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="X">
                           <svg
@@ -1236,8 +1205,7 @@ const OrganizationSchema: React.FC = () => {
                     <div className="person-card-footer-item view-cv">
                       <span>
                         <a
-                          href="https://x.com"
-                          target="_blank"
+                          href="/kullanicilar/ismail-yildirim"
                           rel="noreferrer"
                           title="Özgeçmiş">
                           <svg
