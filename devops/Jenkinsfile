@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = 'giap/frontend'
+        CONTAINER_NAME = 'frontend.giap.local'
+        GIT_REPO = 'https://github.com/erenkarakoc/genc-is-adamlari-platformu.git'
+    }
+
+    stages {
+        stage('Son Kodları Al') {
+            steps {
+                git url: "${GIT_REPO}"
+            }
+        }
+
+        stage('İmaj Dosyasını Oluştur') {
+            steps {
+                dir('frontend') {
+                    sh 'docker build -t ${IMAGE_NAME} .'
+                }
+            }
+        }
+
+        stage('Mevcut Uygulamayı Sil') {
+            steps {
+                script {
+                    def containerExists = sh(script: "docker ps -a -q -f name=${CONTAINER_NAME}", returnStdout: true).trim()
+                    if (containerExists) {
+                        sh "docker rm -f ${CONTAINER_NAME}"
+                    }
+                }
+            }
+        }
+
+        stage('Yeni Uygulama Başlat') {
+            steps {
+                sh "docker run -d --name ${CONTAINER_NAME} ${IMAGE_NAME}"
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'İşlemler başarılı bir şekilde tamamlandı!'
+        }
+    }
+}
