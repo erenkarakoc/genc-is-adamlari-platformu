@@ -1,6 +1,11 @@
 pipeline {
-    agent any
-    
+    agent {
+        docker {
+            image 'docker:19.03.12-dind'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
+
     environment {
         IMAGE_NAME = 'giap/frontend'
         CONTAINER_NAME = 'frontend.giap.local'
