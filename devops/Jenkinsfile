@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        DOCKER_HOST_URL = 'http://162.0.214.98:2375'
         IMAGE_NAME = 'giap/frontend'
         CONTAINER_NAME = 'frontend.giap.local'
         GIT_REPO = 'https://github.com/erenkarakoc/genc-is-adamlari-platformu.git'
@@ -10,14 +11,16 @@ pipeline {
     stages {
         stage('Son Kodları Al') {
             steps {
-                git url: "${GIT_REPO}"
+                sh 'rm -rf genc-is-adamlari-platformu'
+                sh 'git clone ${GIT_REPO}'
+                sh 'cd genc-is-adamlari-platformu && git checkout main'
             }
         }
 
         stage('İmaj Dosyasını Oluştur') {
             steps {
-                dir('frontend') {
-                    sh 'docker build -t ${IMAGE_NAME} .'
+                dir('genc-is-adamlari-platformu/frontend') {
+                    sh "curl -X POST -H 'Content-Type: application/json' -d '{\"context\": \".\", \"tag\": \"${IMAGE_NAME}\"}' ${DOCKER_HOST_URL}/build"
                 }
             }
         }
@@ -25,9 +28,9 @@ pipeline {
         stage('Mevcut Uygulamayı Sil') {
             steps {
                 script {
-                    def containerExists = sh(script: "docker ps -a -q -f name=${CONTAINER_NAME}", returnStdout: true).trim()
+                    def containerExists = sh(script: "curl -s ${DOCKER_HOST_URL}/containers/${CONTAINER_NAME}/json | grep -o '\"Id\":\"[^\"]*\"' | sed 's/\"Id\":\"//g' | sed 's/\"//g'", returnStdout: true).trim()
                     if (containerExists) {
-                        sh "docker rm -f ${CONTAINER_NAME}"
+                        sh "curl -X DELETE ${DOCKER_HOST_URL}/containers/${CONTAINER_NAME}?force=true"
                     }
                 }
             }
@@ -35,7 +38,8 @@ pipeline {
 
         stage('Yeni Uygulama Başlat') {
             steps {
-                sh "docker run -d --name ${CONTAINER_NAME} ${IMAGE_NAME}"
+                sh "curl -X POST -H 'Content-Type: application/json' -d '{\"Image\": \"${IMAGE_NAME}\"}' ${DOCKER_HOST_URL}/containers/create?name=${CONTAINER_NAME}"
+                sh "curl -X POST ${DOCKER_HOST_URL}/containers/${CONTAINER_NAME}/start"
             }
         }
     }
