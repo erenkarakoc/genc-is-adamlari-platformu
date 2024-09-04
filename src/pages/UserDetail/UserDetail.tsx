@@ -19,7 +19,7 @@ const UserDetail: React.FC = () => {
           <div className="col-lg-3">
             <div className="person-card">
               <div className="person-card-image">
-                <img src="/assets/images/people/10.jpg" alt="FATİH AKDİK" />
+                <img src="/assets/images/people/ismail-yildirim-transparent.png" alt="FATİH AKDİK" />
               </div>
             </div>
           </div>
@@ -63,59 +63,40 @@ const UserDetail: React.FC = () => {
               Yıldırım’ın sektördeki öncü rolü ve kitapları, finans dünyasında
               önemli bir referans kaynağı olarak değer görmektedir
             </p>
-          </div>
-        </div>
-
-        <div className="row mt-5">
-          <div className="col-12">
-            <h5 className="section-title mb-5">
+            <h3 className="section-title mb-3">
               <span>Özgeçmiş</span>
-            </h5>
-          </div>
-
-          <ul className="user-detail-cv-items">
-            <li>
-              Gazi Üniversitesini ‘’Ekonometri’’ yüksek lisans/Masterda bölüm
-              birincisi olarak mezun olmuştur.
-            </li>
-            <li>
-              SM. Mali Müşavirlik stajı ile yüksek lisansı bir arada yürüten
+            </h3>
+            <p className="user-detail-about">
+            Gazi Üniversitesini ‘’Ekonometri’’ yüksek lisans/Masterda bölüm
+            birincisi olarak mezun olmuştur.SM. Mali Müşavirlik stajı ile yüksek lisansı bir arada yürüten
               İsmail Yıldırım 2019 yılında yüksek bir ortalama ile Türkiye’nin
               en genç mali müşavirlerinden biri olarak SMMM ruhsatını almaya hak
               kazanmıştır.
-            </li>
-            <li>
+              <br />
+              <br />
               SM. Mali müşavirlik ve şirket üst düzey yönetimleri için finansal
               muhasebe, beyanname hazırlama, vergi ve mali yönetim gibi
               alanlarda yazdığı 7 farklı kitap ve verdiği eğitimler ile 10 bini
               aşkın meslek camiasından kişilere bu yolda ışık tutmuştur.
-            </li>
-            <li>
+              <br />
+              <br />
               Genç yaşına rağmen başarıları ile göze çarparak sektörde adından
               söz ettiren İsmail Yıldırım Ankara SMMM Odasında 17 bin mali
               müşavirin eğitiminden sorumlu olmak üzere önceki dönem Eğitim
               Komisyon Başkan yr.’ına seçilerek görevi layıkı ile yerine
-              getirmiştir.
-            </li>
-            <li>
-              Pek çok dernekte ve platformlarda eğitim başkanlığı ve üstdüzey
+              getirmiştir.Pek çok dernekte ve platformlarda eğitim başkanlığı ve üstdüzey
               yönetimini yerine getirmiştir.
-            </li>
-            <li>
-              Adliyede bilirkişi ve uzlastırmacı olarak da görev almaktadır.
-            </li>
-            <li>
-              Mesleki bilgi ve tecrübesiyle yüzlerce kurumsal firmaya
-              danışmanlık ve müşavirlik hizmeti vermiştir.
-            </li>
-            <li>
-              Sadece meslek camiası kabuğunda kalmak istemeyen Yıldırım tüm
+              <br />
+              <br />
+              Adliyede bilirkişi ve uzlastırmacı olarak da görev almaktadır.Mesleki bilgi ve tecrübesiyle yüzlerce kurumsal firmaya
+              danışmanlık ve müşavirlik hizmeti vermiştir.Sadece meslek camiası kabuğunda kalmak istemeyen Yıldırım tüm
               gençlerin bu konuda atılım yapmasını sağlamak için herkesin
               kabuğunu kırmak üzere ekip arkadaşları ile birlikte GİAP’ı
               kurmuştur.
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
+
 
         <div className="row mt-5">
           <div className="user-detail-contact">

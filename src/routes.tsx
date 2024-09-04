@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Loading from "./components/Loading/Loading"
 import OrganizationSchema from "./pages/Organization/OrganizationSchema/OrganizationSchema"
+import CompanyDetailFonext from "./pages/Companies/CompanyDetail/CompanyDetailFonext"
+import CompanyDetailKeya from "./pages/Companies/CompanyDetail/CompanyDetailKeya"
+import Komisyonlar from "./pages/Komisyonlar/Komisyonlar"
 
 const Home = lazy(() => import("./pages/Home/Home"))
 const Companies = lazy(() => import("./pages/Companies/Companies"))
-const CompanyDetail = lazy(
-  () => import("./pages/Companies/CompanyDetail/CompanyDetail")
-)
 const UserDetail = lazy(
   () => import("./pages/UserDetail/UserDetail")
 )
@@ -22,9 +22,10 @@ const AppRoutes: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/firmalar" element={<Companies />} />
           <Route path="/organizasyon-yapisi" element={<OrganizationSchema />} />
-          <Route path="/firmalar/the-fonext" element={<CompanyDetail />} />
+          <Route path="/firmalar/the-fonext" element={<CompanyDetailFonext />} />
+          <Route path="/firmalar/keya-real-estate" element={<CompanyDetailKeya />} />
           <Route path="/kullanicilar/ismail-yildirim" element={<UserDetail />} />
-
+          <Route path="/komisyonlar" element={<Komisyonlar />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>

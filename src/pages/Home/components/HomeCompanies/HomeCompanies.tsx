@@ -25,7 +25,7 @@ const HomeCompanies: React.FC = () => {
           </div>
           <div className="col-lg-3">
             <div className="company-item">
-              <a href="/firmalar/the-fonext" className="card-overlay"></a>
+              <a href="/firmalar/keya-real-estate" className="card-overlay"></a>
               <div className="company-item-img">
                 <img
                   src="/assets/images/companies/logo-2.png"

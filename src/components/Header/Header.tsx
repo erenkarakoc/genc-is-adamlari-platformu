@@ -157,7 +157,7 @@ const Header: React.FC = () => {
                       <a href="/komisyonlar">Komisyonlar</a>
                     </li>
                     <li>
-                      <a href="/genel-baskan">Genel Başkan</a>
+                      <a href="/kullanicilar/ismail-yildirim">Genel Başkan</a>
                     </li>
                     <li>
                       <a href="/stratejik-plan">Stratejik Plan</a>
@@ -170,7 +170,7 @@ const Header: React.FC = () => {
                     Faaliyetler
                   </a>
                 </li>
-                <li className="nav-item nav-item-with-sub">
+                {/* <li className="nav-item nav-item-with-sub">
                   <a href="/meslekler">Meslekler</a>
                   <ul className="nav-item-sub">
                     <li>
@@ -210,7 +210,7 @@ const Header: React.FC = () => {
                       <a href="/">Sosyal Sorumluluk</a>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   <a className="nav-item" href="/firmalar">
                     Firmalar

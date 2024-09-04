@@ -46,7 +46,7 @@
 .user-detail-cv-items {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
   text-align: left;
   max-width: 400px;
 }
