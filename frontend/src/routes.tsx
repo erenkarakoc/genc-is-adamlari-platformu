@@ -6,6 +6,7 @@ import OrganizationSchema from "./pages/Organization/OrganizationSchema/Organiza
 import CompanyDetailFonext from "./pages/Companies/CompanyDetail/CompanyDetailFonext"
 import CompanyDetailKeya from "./pages/Companies/CompanyDetail/CompanyDetailKeya"
 import Komisyonlar from "./pages/Komisyonlar/Komisyonlar"
+import CalismaAsamasi from "./pages/CalismaAsaması/CalismaAsamasi"
 
 const Home = lazy(() => import("./pages/Home/Home"))
 const Companies = lazy(() => import("./pages/Companies/Companies"))
@@ -26,6 +27,7 @@ const AppRoutes: React.FC = () => {
           <Route path="/firmalar/keya-real-estate" element={<CompanyDetailKeya />} />
           <Route path="/kullanicilar/ismail-yildirim" element={<UserDetail />} />
           <Route path="/komisyonlar" element={<Komisyonlar />} />
+          <Route path="/calisma-asamasi" element={<CalismaAsamasi />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>

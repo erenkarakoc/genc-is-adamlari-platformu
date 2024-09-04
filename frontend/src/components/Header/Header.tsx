@@ -170,6 +170,15 @@ const Header: React.FC = () => {
                     Faaliyetler
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-item" href="/calisma-asamasi">
+                    Meslekler
+                  </a>
+                </li><li className="nav-item">
+                  <a className="nav-item" href="/calisma-asamasi">
+                    Sektörler
+                  </a>
+                </li>
                 {/* <li className="nav-item nav-item-with-sub">
                   <a href="/meslekler">Meslekler</a>
                   <ul className="nav-item-sub">
