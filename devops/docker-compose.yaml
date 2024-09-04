@@ -1,0 +1,8 @@
+services:
+  frontend:
+    container_name: frontend.giap.local
+    image: giap/frontend
+    restart: always
+    build:
+      context: Dockerfile
+      dockerfile: ../frontend/Dockerfile
