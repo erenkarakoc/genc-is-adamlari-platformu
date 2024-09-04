@@ -28,7 +28,7 @@ pipeline {
         stage('Mevcut Uygulamayı Sil') {
             steps {
                 script {
-                    def containerExists = sh(script: "curl -s ${DOCKER_HOST_URL}/containers/${CONTAINER_NAME}/json | jq -r .Id", returnStdout: true).trim()
+                    def containerExists = sh(script: "curl -s ${DOCKER_HOST_URL}/containers/${CONTAINER_NAME}/json | grep -o '\"Id\":\"[^\"]*\"' | sed 's/\"Id\":\"//g' | sed 's/\"//g'", returnStdout: true).trim()
                     if (containerExists) {
                         sh "curl -X DELETE ${DOCKER_HOST_URL}/containers/${CONTAINER_NAME}?force=true"
                     }
