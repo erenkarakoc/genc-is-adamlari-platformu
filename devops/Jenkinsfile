@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'docker:latest'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
 
     environment {
         IMAGE_NAME = 'giap/frontend'
@@ -10,13 +15,15 @@ pipeline {
     stages {
         stage('Son Kodları Al') {
             steps {
-                git url: "${GIT_REPO}"
+                sh 'rm -rf genc-is-adamlari-platformu'
+                sh 'git clone ${GIT_REPO}'
+                sh 'cd genc-is-adamlari-platformu && git checkout main'
             }
         }
 
         stage('İmaj Dosyasını Oluştur') {
             steps {
-                dir('frontend') {
+                dir('genc-is-adamlari-platformu/frontend') {
                     sh 'docker build -t ${IMAGE_NAME} .'
                 }
             }
