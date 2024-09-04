@@ -1,16 +1,17 @@
-FROM node
+FROM node:18
 
 WORKDIR /app
 
-RUN apt update && apt install python3 make g++ git \
-   && rm -rf /var/cache/apk/*
+RUN apt-get update && \
+    apt-get install -y python3 make g++ git && \
+    rm -rf /var/lib/apt/lists/*
 
+COPY package*.json ./
 COPY . .
 
-RUN npm install --save --force
-
-RUN npm run build
+RUN npm install
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start"]
+# Uygulamanın başlatılması
+CMD ["npm", "start"]
